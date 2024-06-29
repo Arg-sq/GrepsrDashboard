@@ -1,8 +1,8 @@
 import { Suspense } from "react";
-import Sidebar from "../sidebar/Siderbar";
+import Sidebar from "@grepsr/pages/sidebar/Siderbar";
 import { Outlet } from "react-router-dom";
 import { Box, HStack, Progress } from "@chakra-ui/react";
-import ErrorBoundary from "../errorBoundary/Errorboundary";
+import ErrorBoundary from "../errorBoundary";
 
 const Layout = () => {
   return (

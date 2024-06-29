@@ -1,10 +1,11 @@
-import { Navigate, useRoutes } from 'react-router-dom'
-import Layout from '../pages/layout/layout'
-import Dashboard from '../pages/dashboard/Dashboard'
-import { NAVIGATION_ROUTES } from './routes.constants'
-import ErrorBoundary from '../pages/errorBoundary/Errorboundary';
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
+import Layout from "@grepsr/pages/layout";
+import ErrorBoundary from '@grepsr/pages/errorBoundary';
 import { Box, HStack, Progress } from '@chakra-ui/react';
+import { Navigate, useRoutes } from 'react-router-dom'
+import { NAVIGATION_ROUTES } from './routes.constants'
+
+const Dashboard =lazy(()=>import("@grepsr/pages/dashboard"))
 
 const AppRoutes = () => {
     const isAuthenticated = true;
