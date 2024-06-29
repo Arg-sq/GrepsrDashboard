@@ -23,15 +23,15 @@ const AppRoutes = () => {
                 element: <Dashboard />,
               },
               {
-                index: NAVIGATION_ROUTES.DATASETS,
+                path: NAVIGATION_ROUTES.DATASETS,
                 element: <DataSets />,
               },
               {
-                index: NAVIGATION_ROUTES.WORKFLOWS,
+                path: NAVIGATION_ROUTES.WORKFLOWS,
                 element: <Workflows />,
               },
               {
-                index: NAVIGATION_ROUTES.CREDIT_USAGE,
+                path: NAVIGATION_ROUTES.CREDIT_USAGE,
                 element: <CreditUsage />,
               },
         

@@ -1,6 +1,6 @@
 
 import { NAVIGATION_ROUTES } from '../../routes/routes.constants'
-import { Box, Flex, VStack } from '@chakra-ui/react'
+import { Box, Divider, Flex, Text, VStack } from '@chakra-ui/react'
 import { grepsr_colors } from '../../theme/color'
 import { svgs } from '../../assets/svgs'
 import Item from './NavItem'
@@ -31,38 +31,31 @@ const Siderbar = () => {
 
   return (
     <Box
-    as="aside"
+    borderRight={`2px solid ${grepsr_colors.gray}`}
     height={"full"}
-    fontWeight={500}
+    fontWeight={700}
     letterSpacing={"0.1px"}
-    color={grepsr_colors.white}
-    bg={grepsr_colors.primary_600}
-    zIndex={999}
+    color={grepsr_colors.black}
+    bg={grepsr_colors.white}
     position={"fixed"}
-    width={"240px"}
-    minW={"240px"}
-    maxW={"240px"}
+    width={"242px"}
   >
-    <Flex
-      minH={"57px"}
-      minW={"115px"}
-      align={"center"}
-      overflow={"hidden"}
-      width={"100px"}
-      my={"20px"}
-      ml={"7px"}
+    <Text
+      textAlign={"left"}
+      fontSize={'large'}
+      my={4}
+      ml={10}
     >
 Grepsr
-    </Flex>
-    <Box height="full">
+    </Text>
+    <Divider border={"1px"} opacity={0.1}/>
+    <Box height="full" mt={6}>
       <Flex
         direction={"column"}
         height="full"
         maxH={`calc(100% - 225px)`}
         overflowY={"scroll"}
-        width={"240px"}
-        minW={"240px"}
-        maxW={"240px"}
+        width={"246px"}
         css={{
           scrollbarGutter: "stable",
           "&::-webkit-scrollbar": {
@@ -83,20 +76,18 @@ Grepsr
       >
         <VStack
           align={"left"}
-          spacing={"10px"}
+      gap={1}
           justifyContent={"flex-start"}
-          px={"20px"}
+          px={4}
         >
           {
             navItems?.map(item => (
     <React.Fragment key={item.id}>
-
       <Item
       item={item}
       isSelected={pathname === item.path}
       />
       </React.Fragment>  
-          
             ))}
         </VStack>
       </Flex>

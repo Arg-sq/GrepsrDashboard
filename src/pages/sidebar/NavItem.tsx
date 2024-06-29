@@ -23,16 +23,16 @@ const Item: React.FC<ISidebarItem> = ({
         <Box
           bg={isSelected ? grepsr_colors.primary_100 : grepsr_colors.white}
           color={isSelected ? grepsr_colors.primary : grepsr_colors.black}
-          borderRadius={"8px"}
+          borderRadius={8}
           cursor={"pointer"}
+          _hover={!isSelected ? { bg: grepsr_colors.primary_100 } : {}}
           onClick={()=> navigate(`${item?.path}`)}
-          _hover={!isSelected ? { bg: grepsr_colors.primary_600 } : {}}
         >
-          <HStack spacing={2} py={"12px"} columnGap={"8px"} px={"12px"}>
-            <Image src={item.icon} alt={item.name} fontSize={"14px"} />
+          <HStack spacing={2} py={3} columnGap={2} px={3}>
+            <Image src={item.icon} alt={item.name}  />
             <Text
               color={item.name === "logout" ? grepsr_colors.primary : ""}
-              fontSize={"14px"}
+              fontSize={"medium"}
               fontWeight={"500"}
             >
               {item.name}

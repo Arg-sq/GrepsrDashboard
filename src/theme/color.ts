@@ -5,6 +5,7 @@ export const grepsr_colors={
     primary_100:"#D6E7FF",
     primary_600:"#4A5568",
     gray_100:"#ECF3FE",
-    gray_200:"#DCE2F0"
+    gray_200:"#DCE2F0",
+    gray:"#E9EAED",
 
 }
