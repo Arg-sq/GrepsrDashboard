@@ -1,0 +1,30 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "paths": {
+      "@grepsr/hooks/*": ["hooks/*"],
+      "@grepsr/constants/*": ["constants/*"],
+      "@grepsr/components/*": ["components/*"],
+      "@grepsr/pages/*": ["pages/*"],
+      "@grepsr/providers/*": ["providers/*"],
+      "@grepsr/routes/*": ["routes/*"],
+      "@grepsr/service/*": ["service/*"],
+      "@grepsr/theme/*": ["theme/*"],
+      "@grepsr/translations/*": ["translations/*"],
+      "@grepsr/types/*": ["types/*"],
+      "@grepsr/assets/*": ["assets/*"],
+      "@grepsr/utils/*": ["utils/*"],
+      "@grepsr/stores/*": ["stores/*"],
+      "@grepsr/styles/*": ["styles/*"],
+      "@grepsr/errorBoundary/*": ["errorBoundary/*"]
+    },
+  },
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
