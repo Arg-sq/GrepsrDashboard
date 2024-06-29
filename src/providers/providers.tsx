@@ -1,5 +1,4 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import React from "react";
 import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";

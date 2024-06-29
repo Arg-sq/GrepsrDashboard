@@ -3,6 +3,10 @@ import { NAVIGATION_ROUTES } from '../../routes/routes.constants'
 import { Box, Flex, VStack } from '@chakra-ui/react'
 import { grepsr_colors } from '../../theme/color'
 import { svgs } from '../../assets/svgs'
+import Item from './NavItem'
+import { useLocation } from 'react-router-dom'
+import React from "react"
+
 
 const navItems = [
   {
@@ -23,6 +27,8 @@ const navItems = [
   
 
 const Siderbar = () => {
+  const { pathname } = useLocation();
+
   return (
     <Box
     as="aside"
@@ -83,29 +89,18 @@ Grepsr
         >
           {
             navItems?.map(item => (
-              // <SidebarItem
-              //   key={item.id}
-              //   item={item}
-              //   isSelected={pathname === item.path}
-              //   clickedMasterAccordion={clickedMasterAccordion}
-              //   handleClickedMasterAccordion={handleClickedMasterAccordion}
-              // />
-              <p>ashesh</p>
+    <React.Fragment key={item.id}>
+
+      <Item
+      item={item}
+      isSelected={pathname === item.path}
+      />
+      </React.Fragment>  
+          
             ))}
         </VStack>
       </Flex>
 
-      <VStack
-        position={"absolute"}
-        left={"0px"}
-        bottom={"32px"}
-        width={"100%"}
-        px={"20px"}
-      >
-        {/* {actions.map(item => (
-          <SidebarItem key={item.id} item={item} />
-        ))} */}
-      </VStack>
     </Box>
   </Box>
   )

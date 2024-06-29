@@ -17,7 +17,7 @@ export default defineConfig({
       "@grepsr/routes": path.resolve("src/routes"),
       "@grepsr/theme": path.resolve("src/theme"),
       "@grepsr/utils": path.resolve("src/utils"),
-      "@grepsr/errorBoundary": path.resolve("src/errorBoundary"),
+      "@grepsr/errorBoundary": path.resolve("src/pages/errorBoundary"),
     },
   },
 })

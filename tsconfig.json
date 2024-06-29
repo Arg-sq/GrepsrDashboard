@@ -1,6 +1,7 @@
 {
   "files": [],
   "compilerOptions": {
+    "esModuleInterop": true, 
     "baseUrl": "./src",
     "jsx": "react-jsx",
     "paths": {
@@ -12,7 +13,7 @@
       "@grepsr/theme/*": ["theme/*"],
       "@grepsr/assets/*": ["assets/*"],
       "@grepsr/utils/*": ["utils/*"],
-      "@grepsr/errorBoundary/*": ["errorBoundary/*"]
+      "@grepsr/errorBoundary/*": ["pages/errorBoundary/*"]
     },
     "types": ["vite-plugin-svgr/client"],
     "lib": ["ESNext"], //somehow if not this lazy load doesnt work

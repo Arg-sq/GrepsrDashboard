@@ -6,6 +6,9 @@ import { Navigate, useRoutes } from 'react-router-dom'
 import { NAVIGATION_ROUTES } from './routes.constants'
 
 const Dashboard =lazy(()=>import("@grepsr/pages/dashboard"))
+const DataSets =lazy(()=>import("@grepsr/pages/datasets"))
+const CreditUsage =lazy(()=>import("@grepsr/pages/creditUsage"))
+const Workflows =lazy(()=>import("@grepsr/pages/workflows"))
 
 const AppRoutes = () => {
     const isAuthenticated = true;
@@ -18,6 +21,18 @@ const AppRoutes = () => {
               {
                 index: true,
                 element: <Dashboard />,
+              },
+              {
+                index: NAVIGATION_ROUTES.DATASETS,
+                element: <DataSets />,
+              },
+              {
+                index: NAVIGATION_ROUTES.WORKFLOWS,
+                element: <Workflows />,
+              },
+              {
+                index: NAVIGATION_ROUTES.CREDIT_USAGE,
+                element: <CreditUsage />,
               },
         
      

@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Sidebar from "@grepsr/pages/sidebar/Siderbar";
+import Sidebar from "@grepsr/pages/sidebar";
 import { Outlet } from "react-router-dom";
 import { Box, HStack, Progress } from "@chakra-ui/react";
 import ErrorBoundary from "../errorBoundary";
