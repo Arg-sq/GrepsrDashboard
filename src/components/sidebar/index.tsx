@@ -50,6 +50,7 @@ const Siderbar = ({sidebarWidth}:ISidebarProps) => {
       fontSize={'xl'}
       my={4}
       ml={showSidebar?10:2}
+      transition={"0.4s ease-in-out"}
     >
 Grepsr
     </Text>

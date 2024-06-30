@@ -1,7 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { grepsr_colors } from "./Color";
 import { buttonTheme } from "./Button";
-// import { textTheme } from "./text";
 
 export const theme = extendTheme({
   styles: {
@@ -22,6 +21,5 @@ export const theme = extendTheme({
   },
   components: {
     Button: buttonTheme,
-//     Text: textTheme,
   },
 });

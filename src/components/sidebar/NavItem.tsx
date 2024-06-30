@@ -19,7 +19,7 @@ const Item: React.FC<ISidebarItem> = ({
   
   }) => {
     const navigate = useNavigate();
-    const{setShowSidebar,showSidebar}= GetSidebarState()
+    const{showSidebar}= GetSidebarState()
 
       return (
         <Box

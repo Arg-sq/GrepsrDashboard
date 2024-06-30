@@ -53,6 +53,8 @@ const Layout = () => {
             pt={3}
             pb={4}
             px={6}
+      transition={"0.4s ease-in-out"}
+
         >
             <Outlet />
         </Box>
