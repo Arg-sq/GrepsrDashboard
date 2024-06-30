@@ -1,5 +1,5 @@
 import { useState, useEffect, ReactNode } from "react";
-import { grepsr_colors } from "../../theme/color";
+import { grepsr_colors } from "../../theme/Color";
 import { Box, Button, Text } from "@chakra-ui/react";
 import { NAVIGATION_ROUTES } from "../../routes/routes.constants";
 

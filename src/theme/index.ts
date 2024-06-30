@@ -1,6 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
-import { grepsr_colors } from "./color";
-// import { buttonTheme } from "./Button";
+import { grepsr_colors } from "./Color";
+import { buttonTheme } from "./Button";
 // import { textTheme } from "./text";
 
 export const theme = extendTheme({
@@ -8,7 +8,7 @@ export const theme = extendTheme({
     global: {
       body: {
         bgColor: grepsr_colors.white,
-        fontFamily: "'San Fransisco', sans-serif",
+        fontFamily: "Manrope",
       },
       a: {
         _hover: {
@@ -32,8 +32,8 @@ export const theme = extendTheme({
 
     },
   },
-//   components: {
-//     Button: buttonTheme,
+  components: {
+    Button: buttonTheme,
 //     Text: textTheme,
-//   },
+  },
 });

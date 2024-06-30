@@ -1,5 +1,5 @@
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
-import { grepsr_colors } from "@grepsr/theme/color";
+import { grepsr_colors } from "@grepsr/theme/Color";
 import {  useNavigate } from "react-router-dom";
 
 interface ISidebarItem{

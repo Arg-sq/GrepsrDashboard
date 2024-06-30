@@ -1,7 +1,7 @@
 
 import { NAVIGATION_ROUTES } from '../../routes/routes.constants'
-import { Box, Divider, Flex, Text, VStack } from '@chakra-ui/react'
-import { grepsr_colors } from '../../theme/color'
+import { Box, Button, Divider, Flex, Text, VStack } from '@chakra-ui/react'
+import { grepsr_colors } from '../../theme/Color'
 import { svgs } from '../../assets/svgs'
 import Item from './NavItem'
 import { useLocation } from 'react-router-dom'
@@ -90,8 +90,14 @@ Grepsr
       </React.Fragment>  
             ))}
         </VStack>
+      
       </Flex>
-
+      <VStack bg={grepsr_colors.gray_300} mx={4} px={6} py={4} borderRadius={8}>
+         <Text size={"xs"} fontWeight={"medium"} my={2}>Need any help?</Text>
+     <Button variant={"secondary"} size={"md"}>
+      `Contact Support`
+     </Button>
+        </VStack>
     </Box>
   </Box>
   )
