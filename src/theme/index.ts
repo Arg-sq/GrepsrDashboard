@@ -18,17 +18,17 @@ export const theme = extendTheme({
           border: "0px !important",
         },
       },
-      button: {
-        _hover: {
-          textDecoration: "none !important",
-          outline: "none !important",
-          border: "0px !important",
-        },
-        _focus: {
-          outline: "none !important",
-          border: "0px !important",
-        },
-      },
+      // button: {
+      //   _hover: {
+      //     textDecoration: "none !important",
+      //     outline: "none !important",
+      //     border: "0px !important",
+      //   },
+      //   _focus: {
+      //     outline: "none !important",
+      //     border: "0px !important",
+      //   },
+      // },
     
 
     },

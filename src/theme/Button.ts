@@ -14,6 +14,8 @@ const primary = defineStyle({
   _hover: {
     background: grepsr_colors.primary_100,
     color: grepsr_colors.primary,
+     outline: "none ",
+    border:`1px solid ${grepsr_colors.primary_100}`,
   },
 });
 
@@ -23,6 +25,8 @@ const secondary = defineStyle({
   ...baseStyles,
   _hover: {
     background: grepsr_colors.gray_100,
+    outline: "none ",
+    border:`1px solid ${grepsr_colors.gray_100}`,
   },
 });
 
@@ -32,6 +36,9 @@ const ghost = defineStyle({
   ...baseStyles,
   _hover: {
     color: grepsr_colors.black,
+    outline: "none ",
+    border:`1px solid ${grepsr_colors.gray_100}`,
+    
   },
 });
 
