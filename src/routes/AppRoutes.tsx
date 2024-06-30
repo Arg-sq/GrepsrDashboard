@@ -41,7 +41,7 @@ const AppRoutes = () => {
         
           {
             path: NAVIGATION_ROUTES.NO_MATCH,
-            element: <Navigate to={NAVIGATION_ROUTES.DASHBOARD} replace />,
+            element: <Navigate to={NAVIGATION_ROUTES.BASE} replace />,
           },
     ]
 

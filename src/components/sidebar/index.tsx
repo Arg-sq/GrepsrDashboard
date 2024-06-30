@@ -4,7 +4,7 @@ import { Box, Button, Divider, Flex, Text, VStack } from '@chakra-ui/react'
 import { grepsr_colors } from '../../theme/Color'
 import { svgs } from '../../assets/svgs'
 import Item from './NavItem'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import React from "react"
 import GetSidebarState from '@grepsr/utils/GetSidebarState'
 
@@ -30,6 +30,7 @@ const navItems = [
   sidebarWidth:string
 }
 const Siderbar = ({sidebarWidth}:ISidebarProps) => {
+  const navigate=useNavigate()
   const { pathname } = useLocation();
   const{showSidebar}= GetSidebarState()
 
@@ -51,6 +52,8 @@ const Siderbar = ({sidebarWidth}:ISidebarProps) => {
       my={4}
       ml={showSidebar?10:2}
       transition={"0.4s ease-in-out"}
+      cursor={"pointer"}
+      onClick={()=>navigate(NAVIGATION_ROUTES.BASE)}
     >
 Grepsr
     </Text>

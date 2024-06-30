@@ -1,7 +1,6 @@
 export const NAVIGATION_ROUTES = {
     BASE: "/",
     LOGIN: "/login",
-    DASHBOARD: "/dashboard",
     DATASETS: "/datasets",
     CREDIT_USAGE: "/credit-usage",
     WORKFLOWS: "/workflows",

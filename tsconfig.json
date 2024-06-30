@@ -14,6 +14,7 @@
       "@grepsr/utils/*": ["utils/*"],
       "@grepsr/errorBoundary/*": ["pages/errorBoundary/*"]
     },
+    // "module":"ESNext",
     "lib": ["ESNext","DOM"], //somehow if not this lazy load doesnt work
   },
   "include": ["src","types.ts"],

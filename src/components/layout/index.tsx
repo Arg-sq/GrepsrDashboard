@@ -14,7 +14,6 @@ const LAYOUT_WIDTHS = {
   SMALL: "80px",
 };
 
-
 const Layout = () => {
   const { width } = useWindowReSize();
   const [showSidebar, setShowSidebar] = useState(true);

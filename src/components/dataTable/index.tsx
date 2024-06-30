@@ -159,7 +159,7 @@ import { grepsr_colors } from '@grepsr/theme/Color'
                           }}
                           onClick={header.column.getToggleSortingHandler()}
                         >
-                          <HStack justifyContent={"space-between"}>
+                          <HStack justifyContent={"space-between"} cursor={"pointer"}>
                             <Text
                               flex={1}
                               color={grepsr_colors.black}
