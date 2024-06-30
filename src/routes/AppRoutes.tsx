@@ -1,3 +1,4 @@
+import React from 'react'
 import { Suspense, lazy } from 'react';
 import Layout from "@grepsr/components/layout";
 import ErrorBoundary from '@grepsr/components/errorBoundary';
@@ -16,7 +17,7 @@ const AppRoutes = () => {
     const adminRoutes=[
         {
             path: NAVIGATION_ROUTES.BASE,
-            element: <Layout/>,
+               element: <Layout/>,
             children: [
               {
                 index: true,

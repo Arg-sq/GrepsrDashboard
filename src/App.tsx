@@ -1,14 +1,13 @@
-import Provider from './providers/providers'
-import AppRoutes from './routes/AppRoutes'
+import React from 'react';
+import Provider from './providers/providers';
+import AppRoutes from './routes/AppRoutes';
 
-const App=()=> {
-
-
+const App = () => {
   return (
     <Provider>
-      <AppRoutes/>
+      <AppRoutes />
     </Provider>
-  )
-}
+  );
+};
 
-export default App
+export default App;

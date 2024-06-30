@@ -1,4 +1,5 @@
 import { Box, HStack, Progress } from '@chakra-ui/react'
+import React from 'react'
 
 const SuspenseComponent = () => {
   return (

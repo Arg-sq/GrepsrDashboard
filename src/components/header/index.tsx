@@ -1,3 +1,4 @@
+import React from 'react'
 import { Avatar, Box, Flex, Image, Text } from "@chakra-ui/react"
 import { svgs } from "@grepsr/assets/svgs"
 import { NAVIGATION_ROUTES } from "@grepsr/routes/routes.constants"

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Button, Flex, Image, Switch, Text } from '@chakra-ui/react'
 import { svgs } from '@grepsr/assets/svgs'
 import { grepsr_colors } from '@grepsr/theme/Color'

@@ -1,4 +1,4 @@
-
+import React from 'react'
 import { DataTable } from "@grepsr/components/dataTable"
 import DataSetHeader from "./DataSetHeader"
 import { Text, VStack } from "@chakra-ui/react"
@@ -40,7 +40,7 @@ const DataSets = () => {
   return (
 <VStack>
 <DataSetHeader/>
-<DataTable data={data} columns={columns} isLoading={isLoading}/>
+<DataTable data={data??[]} columns={columns} isLoading={isLoading}/>
 </VStack>
   )
 }

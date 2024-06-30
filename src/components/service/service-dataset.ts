@@ -1,7 +1,7 @@
 import axios from "axios"
 import { BaseURL } from "./service-axios"
 import { useQuery } from "react-query"
-import { GrepsrResponse, grepsrAPI } from "./service-api"
+import { grepsrAPI } from "./service-api"
 
 
     export interface IDataSet {
@@ -35,9 +35,11 @@ import { GrepsrResponse, grepsrAPI } from "./service-api"
       }
 
 const getDataSet=async()=>{
-    const response= await axios.get<GrepsrResponse<Array<IDataSet>>>(`${BaseURL}/${grepsrAPI.dataset}`)
-    return response.data
+    return await axios.get<IDataSet[]>(`${BaseURL}/${grepsrAPI.dataset}`)
+    
 }
 export const useGetDataSet=()=>{
-    return useQuery(["DataSet"],getDataSet)
+    return useQuery(["DataSet"],getDataSet,{
+      select:resp=>resp.data
+    })
 }

@@ -1,3 +1,4 @@
+import React from 'react'
 import {
     Box,
     Heading,
@@ -31,7 +32,9 @@ import { grepsr_colors } from '@grepsr/theme/Color'
   import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
   export type DataTableProps = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     data: Record<string, any>[];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     columns: ColumnDef<any, any>[];
     isLoading?: boolean;
     pinColumnAccess?: boolean;
@@ -140,7 +143,7 @@ import { grepsr_colors } from '@grepsr/theme/Color'
                       },
                     }}
                   >
-                    {headerGroup.headers.map((header, index) => {
+                    {headerGroup.headers.map((header) => {
                       return (
                         <Th
                           key={header.id}
@@ -149,7 +152,7 @@ import { grepsr_colors } from '@grepsr/theme/Color'
                           whiteSpace="nowrap"
                           style={{
                    backgroundColor:grepsr_colors.primary_200,
-                            width: `${columns[index]?.size}%` ?? header.getSize(),
+                            width:  header.getSize(),
                             textAlign:
                               header.id == "Actions" ||
                               header.id == "Action" ||
