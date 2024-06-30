@@ -1,5 +1,5 @@
 
-import { NAVIGATION_ROUTES } from '../../routes/routes.constants'
+import { NAVIGATION_ROUTES } from '@grepsr/routes/routes.constants'
 import { Box, Button, Divider, Flex, Text, VStack } from '@chakra-ui/react'
 import { grepsr_colors } from '../../theme/Color'
 import { svgs } from '../../assets/svgs'

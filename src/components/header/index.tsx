@@ -1,10 +1,19 @@
 import { Avatar, Box, Flex, Image, Text } from "@chakra-ui/react"
 import { svgs } from "@grepsr/assets/svgs"
+import { NAVIGATION_ROUTES } from "@grepsr/routes/routes.constants"
 import { grepsr_colors } from "@grepsr/theme/Color"
 import GetSidebarState from "@grepsr/utils/GetSidebarState"
+import { useLocation } from "react-router-dom"
 
+const Title={
+  [NAVIGATION_ROUTES.BASE]:"Dashboard",
+  [NAVIGATION_ROUTES.DATASETS]:"DataSets",
+  [NAVIGATION_ROUTES.WORKFLOWS]:"Workflows",
+  [NAVIGATION_ROUTES.CREDIT_USAGE]:"Credit Usage"
+}
 const Header = () => {
    const{setShowSidebar,showSidebar}= GetSidebarState()
+   const location= useLocation()
    
   return (
 <Flex justifyContent={"space-between"} px={6} py={3} bg={grepsr_colors.white} h={"64px"} borderBottom={`2px solid ${grepsr_colors.gray}`}>
@@ -14,7 +23,7 @@ const Header = () => {
        transform={showSidebar?"rotate(0deg)": "rotate(180deg)"}/>
        </Box>
         <Text fontWeight={700} fontSize={"xl"}>
-            Amazon product price
+            {Title[location.pathname] || "Grepsr"}
         </Text>
         <Box cursor="pointer" height="24px">
        <Image src={svgs.Info} alt="info button" h="100%" w="100%"/>

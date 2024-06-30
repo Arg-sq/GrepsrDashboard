@@ -1,7 +1,7 @@
 import { useState, useEffect, ReactNode } from "react";
-import { grepsr_colors } from "../../theme/Color";
+import { grepsr_colors } from "@grepsr/theme/Color";
 import { Box, Button, Text } from "@chakra-ui/react";
-import { NAVIGATION_ROUTES } from "../../routes/routes.constants";
+import { NAVIGATION_ROUTES } from "@grepsr/routes/routes.constants";
 
 interface ErrorBoundaryProps {
   children: ReactNode;
