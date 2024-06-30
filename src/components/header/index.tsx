@@ -1,13 +1,17 @@
 import { Avatar, Box, Flex, Image, Text } from "@chakra-ui/react"
 import { svgs } from "@grepsr/assets/svgs"
 import { grepsr_colors } from "@grepsr/theme/Color"
+import GetSidebarState from "@grepsr/utils/GetSidebarState"
 
 const Header = () => {
+   const{setShowSidebar,showSidebar}= GetSidebarState()
+   
   return (
-<Flex justifyContent={"space-between"} px={6} py={3} bg={grepsr_colors.white} h={"61px"} borderBottom={`2px solid ${grepsr_colors.gray}`}>
+<Flex justifyContent={"space-between"} px={6} py={3} bg={grepsr_colors.white} h={"64px"} borderBottom={`2px solid ${grepsr_colors.gray}`}>
 <Flex  alignItems="center" gap={2}>
-       <Box cursor="pointer" height="24px">
-       <Image src={svgs.BackArrow} alt="sidebar hide button" h="100%" w="100%"/>
+       <Box cursor="pointer" height="24px" onClick={()=>setShowSidebar((prev)=>!prev)}>
+       <Image src={svgs.BackArrow} alt="sidebar hide button" h="100%" w="100%"
+       transform={showSidebar?"rotate(0deg)": "rotate(180deg)"}/>
        </Box>
         <Text fontWeight={700} fontSize={"xl"}>
             Amazon product price

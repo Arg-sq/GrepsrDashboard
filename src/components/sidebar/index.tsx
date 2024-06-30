@@ -6,6 +6,7 @@ import { svgs } from '../../assets/svgs'
 import Item from './NavItem'
 import { useLocation } from 'react-router-dom'
 import React from "react"
+import GetSidebarState from '@grepsr/utils/GetSidebarState'
 
 
 const navItems = [
@@ -25,9 +26,12 @@ const navItems = [
  
     ]
   
-
-const Siderbar = () => {
+ type ISidebarProps={
+  sidebarWidth:string
+}
+const Siderbar = ({sidebarWidth}:ISidebarProps) => {
   const { pathname } = useLocation();
+  const{showSidebar}= GetSidebarState()
 
   return (
     <Box
@@ -38,13 +42,14 @@ const Siderbar = () => {
     color={grepsr_colors.black}
     bg={grepsr_colors.white}
     position={"fixed"}
-    width={"242px"}
+    transition={"0.3s ease-in-out"}
+    width={sidebarWidth}
   >
     <Text
       textAlign={"left"}
       fontSize={'xl'}
       my={4}
-      ml={10}
+      ml={showSidebar?10:2}
     >
 Grepsr
     </Text>
@@ -55,7 +60,7 @@ Grepsr
         height="full"
         maxH={`calc(100% - 225px)`}
         overflowY={"scroll"}
-        width={"240px"}
+        width={showSidebar?"240px":"78px"}
         css={{
           scrollbarGutter: "stable",
           "&::-webkit-scrollbar": {
@@ -93,9 +98,9 @@ Grepsr
       
       </Flex>
       <VStack bg={grepsr_colors.gray_300} mx={4} px={6} py={4} borderRadius={8}>
-         <Text size={"xs"} fontWeight={"medium"} my={2}>Need any help?</Text>
+         {showSidebar &&<Text size={"xs"} fontWeight={"medium"} my={2}>Need any help?</Text>}
      <Button variant={"secondary"}>
-      `Contact Support`
+      {showSidebar?`Contact Support`:"CS"}
      </Button>
         </VStack>
     </Box>

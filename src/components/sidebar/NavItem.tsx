@@ -1,5 +1,6 @@
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import { grepsr_colors } from "@grepsr/theme/Color";
+import GetSidebarState from "@grepsr/utils/GetSidebarState";
 import {  useNavigate } from "react-router-dom";
 
 interface ISidebarItem{
@@ -18,6 +19,7 @@ const Item: React.FC<ISidebarItem> = ({
   
   }) => {
     const navigate = useNavigate();
+    const{setShowSidebar,showSidebar}= GetSidebarState()
 
       return (
         <Box
@@ -30,13 +32,15 @@ const Item: React.FC<ISidebarItem> = ({
         >
           <HStack spacing={2} py={3} columnGap={2} px={3}>
             <Image src={item.icon} alt={item.name}  />
-            <Text
-              color={item.name === "logout" ? grepsr_colors.primary : ""}
-              fontSize={"medium"}
-              fontWeight={"500"}
-            >
-              {item.name}
-            </Text>
+           {showSidebar && (
+             <Text
+             fontSize={"medium"}
+             fontWeight={"500"}
+           >
+             {item.name}
+           </Text>
+           )}
+           
           </HStack>
         </Box>
       );
