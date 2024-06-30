@@ -42,7 +42,7 @@ const Siderbar = () => {
   >
     <Text
       textAlign={"left"}
-      fontSize={'large'}
+      fontSize={'xl'}
       my={4}
       ml={10}
     >
@@ -55,7 +55,7 @@ Grepsr
         height="full"
         maxH={`calc(100% - 225px)`}
         overflowY={"scroll"}
-        width={"246px"}
+        width={"240px"}
         css={{
           scrollbarGutter: "stable",
           "&::-webkit-scrollbar": {
@@ -94,7 +94,7 @@ Grepsr
       </Flex>
       <VStack bg={grepsr_colors.gray_300} mx={4} px={6} py={4} borderRadius={8}>
          <Text size={"xs"} fontWeight={"medium"} my={2}>Need any help?</Text>
-     <Button variant={"secondary"} size={"md"}>
+     <Button variant={"secondary"}>
       `Contact Support`
      </Button>
         </VStack>

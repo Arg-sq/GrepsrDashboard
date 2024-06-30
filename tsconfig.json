@@ -1,5 +1,4 @@
 {
-  "files": [],
   "compilerOptions": {
     "esModuleInterop": true, 
     "baseUrl": "./src",
@@ -15,15 +14,10 @@
       "@grepsr/utils/*": ["utils/*"],
       "@grepsr/errorBoundary/*": ["pages/errorBoundary/*"]
     },
-    "types": ["vite-plugin-svgr/client"],
-    "lib": ["ESNext"], //somehow if not this lazy load doesnt work
+    "lib": ["ESNext","DOM"], //somehow if not this lazy load doesnt work
   },
   "include": ["src","types.ts"],
- 
   "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
     {
       "path": "./tsconfig.node.json"
     }

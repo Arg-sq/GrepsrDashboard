@@ -1,7 +1,8 @@
+import DataSetHeader from "./DataSetHeader"
 
 const DataSets = () => {
   return (
-    <div>DataSets</div>
+<DataSetHeader/>
   )
 }
 

@@ -13,7 +13,7 @@ const primary = defineStyle({
   ...baseStyles,
   _hover: {
     background: grepsr_colors.primary_100,
-    color: grepsr_colors.white,
+    color: grepsr_colors.primary,
   },
 });
 
@@ -27,7 +27,7 @@ const secondary = defineStyle({
 });
 
 const ghost = defineStyle({
-  background: grepsr_colors.gray,
+  background: grepsr_colors.white,
   border: `1px solid ${grepsr_colors.gray}`,
   ...baseStyles,
   _hover: {
@@ -75,7 +75,7 @@ export const buttonTheme = defineStyleConfig({
   },
 
   defaultProps: {
-    size: "sm",
+    size: "md",
     variant: "primary",
   },
 });

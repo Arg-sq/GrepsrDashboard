@@ -21,8 +21,7 @@
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.24.0",
-    "vite-plugin-svgr": "^4.2.0"
+    "react-router-dom": "^6.24.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",

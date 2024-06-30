@@ -1,6 +1,7 @@
 export const grepsr_colors={
     white:"#fff",
     black:"#1B2D4F",
+    background:"#F6F5FB",
     primary:"#1276FF",
     primary_100:"#D6E7FF",
     primary_600:"#4A5568",

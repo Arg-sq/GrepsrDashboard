@@ -1,9 +1,9 @@
 import { Suspense, lazy } from 'react';
-import Layout from "@grepsr/pages/layout";
-import ErrorBoundary from '@grepsr/pages/errorBoundary';
-import { Box, HStack, Progress } from '@chakra-ui/react';
+import Layout from "@grepsr/components/layout";
+import ErrorBoundary from '@grepsr/components/errorBoundary';
 import { Navigate, useRoutes } from 'react-router-dom'
 import { NAVIGATION_ROUTES } from './routes.constants'
+import SuspenseComponent from '@grepsr/components/suspense';
 
 const Dashboard =lazy(()=>import("@grepsr/pages/dashboard"))
 const DataSets =lazy(()=>import("@grepsr/pages/datasets"))
@@ -62,13 +62,7 @@ const AppRoutes = () => {
       return (
         <ErrorBoundary>
           <Suspense
-            fallback={
-              <HStack justifyContent="center" h="100dvh" w="100dvw">
-                <Box width={"100dvw"} height={"100dvh"}>
-                  <Progress size="xs" isIndeterminate hasStripe />
-                </Box>
-              </HStack>
-            }
+            fallback={<SuspenseComponent/>}
           >
             {element}
           </Suspense>

@@ -7,8 +7,9 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bgColor: grepsr_colors.white,
+        bgColor: grepsr_colors.background,
         fontFamily: "Manrope",
+        width:"100%",
       },
       a: {
         _hover: {
