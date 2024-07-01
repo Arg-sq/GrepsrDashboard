@@ -1,4 +1,12 @@
-# React + TypeScript + Vite
+# Grepsr Dashboard assesment
+
+Features:
+
+-Responsive design for different screen sizes
+-Toggleable sidebar with animation
+-Dynamic title based on route
+-Credit usage display
+-Notification bell and avatar components
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Flex, Image, Switch, Text } from '@chakra-ui/react';
+import { Button, Flex, Image, Text } from '@chakra-ui/react';
 import { svgs } from '@grepsr/assets/svgs';
 import { grepsr_colors } from '@grepsr/theme/Color';
 import { useState } from 'react';
+import ChakraSwitch from '@grepsr/components/switch';
 
 const DataSetHeader = () => {
   const [isEditMode, setEditMode] = useState(false);
@@ -23,38 +24,7 @@ const DataSetHeader = () => {
       <Flex flexDirection={{ base: 'column', lg: 'row' }} gap={{ base: 2, lg: 0 }}>
         <Flex alignItems={'center'} mr={6} gap={2}>
           <Text>Edit mode</Text>
-          <Switch
-            isChecked={isEditMode}
-            h="38px"
-            size="md"
-            sx={{
-              top: 1.5,
-              '.chakra-switch__track::after': {
-                content: isEditMode ? '"ON"' : '"OFF"',
-                color: grepsr_colors.white,
-                display: 'block',
-                position: 'absolute',
-                transform: 'translate(-50%,-50%)',
-                top: '12px',
-                left: isEditMode ? '28%' : '66%',
-                fontWeight: 'bold',
-                fontSize: 'xs'
-              },
-              '.chakra-switch__track': {
-                width: '50px',
-                height: '20px'
-              },
-              '.chakra-switch__thumb': {
-                top: '4px',
-                width: '20px',
-                height: '20px',
-                _checked: {
-                  transform: 'translateX(30px)'
-                }
-              }
-            }}
-            onChange={() => setEditMode((prev) => !prev)}
-          />
+          <ChakraSwitch isChecked={isEditMode} action={() => setEditMode((prev) => !prev)} />
         </Flex>
         <Flex>
           <Flex mr={3}>

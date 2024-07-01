@@ -62,24 +62,6 @@ export const buttonTheme = defineStyleConfig({
       fontSize: 14,
       fontWeight: '500',
       width: 'fit-content'
-    },
-    fit: {
-      height: '32px',
-      fontSize: 14,
-      fontWeight: '500',
-      width: 'fit-content'
-    },
-    lg_fit: {
-      height: '32px',
-      fontSize: 16,
-      fontWeight: '600',
-      width: 'fit-content'
-    },
-    lg: {
-      height: '32px',
-      fontSize: 16,
-      fontWeight: '600',
-      width: '317px'
     }
   },
 
