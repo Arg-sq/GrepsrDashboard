@@ -4,7 +4,10 @@ import { grepsr_colors } from './Color';
 const baseStyles = {
   px: 3,
   py: 4,
-  borderRadius: 8
+  borderRadius: 8,
+  _focus: {
+    outline: 'none '
+  }
 };
 
 const primary = defineStyle({
