@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1719814542270" clover="3.2.0">
-  <project timestamp="1719814542270" name="All files">
+<coverage generated="1719814980142" clover="3.2.0">
+  <project timestamp="1719814980142" name="All files">
     <metrics statements="57" coveredstatements="53" conditionals="28" coveredconditionals="20" methods="6" coveredmethods="3" elements="91" coveredelements="76" complexity="0" loc="57" ncloc="57" packages="6" files="17" classes="17"/>
     <package name="assets.svgs">
       <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

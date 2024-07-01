@@ -7,7 +7,12 @@ import { useState } from 'react';
 const DataSetHeader = () => {
   const [isEditMode, setEditMode] = useState(false);
   return (
-    <Flex mt={3} justifyContent={'space-between'} width={'100%'}>
+    <Flex
+      flexDirection={{ base: 'column', lg: 'row' }}
+      gap={{ base: 2, lg: 0 }}
+      mt={3}
+      justifyContent={'space-between'}
+      width={'100%'}>
       <Flex gap={3}>
         <Button variant={'primary'}>Operations</Button>
         <Button variant={'ghost'}>
@@ -15,15 +20,15 @@ const DataSetHeader = () => {
           Add Filters
         </Button>
       </Flex>
-      <Flex>
-        <Flex alignItems={'center'} mr={3} gap={2}>
+      <Flex flexDirection={{ base: 'column', lg: 'row' }} gap={{ base: 2, lg: 0 }}>
+        <Flex alignItems={'center'} mr={6} gap={2}>
           <Text>Edit mode</Text>
           <Switch
             isChecked={isEditMode}
             h="38px"
             size="md"
             sx={{
-              top: 2,
+              top: 1.5,
               '.chakra-switch__track::after': {
                 content: isEditMode ? '"ON"' : '"OFF"',
                 color: grepsr_colors.white,
@@ -51,21 +56,23 @@ const DataSetHeader = () => {
             onChange={() => setEditMode((prev) => !prev)}
           />
         </Flex>
-        <Flex mx={3}>
-          <Button variant={'ghost'}>
-            <Image src={svgs.Hide} alt="filter" pr={2} />
-            Show metadata
-          </Button>
-        </Flex>
-        <Flex
-          borderRadius={8}
-          border={`1px solid ${grepsr_colors.gray}`}
-          cursor={'pointer'}
-          background={grepsr_colors.white}
-          alignItems="center"
-          px={1}
-          height={8}>
-          <Image src={svgs.Download} alt="download dataset" />
+        <Flex>
+          <Flex mr={3}>
+            <Button variant={'ghost'}>
+              <Image src={svgs.Hide} alt="filter" pr={2} />
+              Show metadata
+            </Button>
+          </Flex>
+          <Flex
+            borderRadius={8}
+            border={`1px solid ${grepsr_colors.gray}`}
+            cursor={'pointer'}
+            background={grepsr_colors.white}
+            alignItems="center"
+            px={1}
+            height={8}>
+            <Image src={svgs.Download} alt="download dataset" />
+          </Flex>
         </Flex>
       </Flex>
     </Flex>

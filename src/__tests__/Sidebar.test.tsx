@@ -38,11 +38,11 @@ describe('Sidebar component on closed view', () => {
   beforeEach(() => {
     (GetSidebarState as jest.Mock).mockReturnValue({ showSidebar: false });
   });
-  it('renders sidebar with icon only ', async () => {
+  it('renders sidebar with icon only ', () => {
     const component = render(<Sidebar sidebarWidth={'80px'} />);
 
-    await component.findByText('Grepsr');
-    expect(component.getByText('Grepsr')).toBeInTheDocument();
+    const text = component.queryByText('DataSets');
+    expect(text).toBeNull();
   });
   afterEach(() => {
     jest.clearAllMocks();

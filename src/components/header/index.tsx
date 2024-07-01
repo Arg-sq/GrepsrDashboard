@@ -25,7 +25,11 @@ const Header = () => {
       h={'64px'}
       borderBottom={`2px solid ${grepsr_colors.gray}`}>
       <Flex alignItems="center" gap={2}>
-        <Box cursor="pointer" height="24px" onClick={() => setShowSidebar((prev) => !prev)}>
+        <Box
+          display={{ base: 'none', lg: 'block' }}
+          cursor="pointer"
+          height="24px"
+          onClick={() => setShowSidebar((prev) => !prev)}>
           <Image
             src={svgs.BackArrow}
             alt="sidebar hide button"
@@ -42,7 +46,13 @@ const Header = () => {
         </Box>
       </Flex>
       <Flex gap={3} alignItems={'center'}>
-        <Flex bg={grepsr_colors.gray_100} borderRadius={22} textAlign={'center'} pr={2.5} py={1}>
+        <Flex
+          display={{ base: 'none', lg: 'flex' }}
+          bg={grepsr_colors.gray_100}
+          borderRadius={22}
+          textAlign={'center'}
+          pr={2.5}
+          py={1}>
           <Box height="28px" pl={1}>
             <Image src={svgs.Credit} alt="sidebar hide button" h="100%" w="100%" />
           </Box>
