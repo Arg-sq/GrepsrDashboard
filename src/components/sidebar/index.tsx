@@ -29,7 +29,7 @@ const navItems = [
  type ISidebarProps={
   sidebarWidth:string
 }
-const Siderbar = ({sidebarWidth}:ISidebarProps) => {
+const Sidebar = ({sidebarWidth}:ISidebarProps) => {
   const navigate=useNavigate()
   const { pathname } = useLocation();
   const{showSidebar}= GetSidebarState()
@@ -112,4 +112,4 @@ Grepsr
   )
 }
 
-export default Siderbar
+export default Sidebar
