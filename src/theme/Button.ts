@@ -1,10 +1,10 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/react";
-import { grepsr_colors } from "./Color";
+import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
+import { grepsr_colors } from './Color';
 
 const baseStyles = {
   px: 3,
   py: 4,
-  borderRadius: 8,
+  borderRadius: 8
 };
 
 const primary = defineStyle({
@@ -14,9 +14,9 @@ const primary = defineStyle({
   _hover: {
     background: grepsr_colors.primary_100,
     color: grepsr_colors.primary,
-     outline: "none ",
-    border:`1px solid ${grepsr_colors.primary_100}`,
-  },
+    outline: 'none ',
+    border: `1px solid ${grepsr_colors.primary_100}`
+  }
 });
 
 const secondary = defineStyle({
@@ -25,9 +25,9 @@ const secondary = defineStyle({
   ...baseStyles,
   _hover: {
     background: grepsr_colors.gray_100,
-    outline: "none ",
-    border:`1px solid ${grepsr_colors.gray_100}`,
-  },
+    outline: 'none ',
+    border: `1px solid ${grepsr_colors.gray_100}`
+  }
 });
 
 const ghost = defineStyle({
@@ -36,53 +36,52 @@ const ghost = defineStyle({
   ...baseStyles,
   _hover: {
     color: grepsr_colors.black,
-    outline: "none ",
-    border:`1px solid ${grepsr_colors.gray_100}`,
-    
-  },
+    outline: 'none ',
+    border: `1px solid ${grepsr_colors.gray_100}`
+  }
 });
 
 export const buttonTheme = defineStyleConfig({
   variants: {
     primary,
     secondary,
-    ghost,
+    ghost
   },
   sizes: {
     sm: {
-      height: "32px",
+      height: '32px',
       fontSize: 14,
-      fontWeight: "500",
-      width: 97,
+      fontWeight: '500',
+      width: 97
     },
     md: {
-      height: "32px",
+      height: '32px',
       fontSize: 14,
-      fontWeight: "500",
-      width: "fit-content",
+      fontWeight: '500',
+      width: 'fit-content'
     },
     fit: {
-      height: "32px",
+      height: '32px',
       fontSize: 14,
-      fontWeight: "500",
-      width: "fit-content",
+      fontWeight: '500',
+      width: 'fit-content'
     },
     lg_fit: {
-      height: "32px",
+      height: '32px',
       fontSize: 16,
-      fontWeight: "600",
-      width: "fit-content",
+      fontWeight: '600',
+      width: 'fit-content'
     },
     lg: {
-      height: "32px",
+      height: '32px',
       fontSize: 16,
-      fontWeight: "600",
-      width: "317px",
-    },
+      fontWeight: '600',
+      width: '317px'
+    }
   },
 
   defaultProps: {
-    size: "md",
-    variant: "primary",
-  },
+    size: 'md',
+    variant: 'primary'
+  }
 });
