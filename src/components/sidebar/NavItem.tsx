@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, HStack, Image, Text } from '@chakra-ui/react';
 import { grepsr_colors } from '@grepsr/theme/Color';
-import GetSidebarState from '@grepsr/utils/GetSidebarState';
+import { GetSidebarState } from '@grepsr/utils/GetSidebarState';
 import { useNavigate } from 'react-router-dom';
 
 interface ISidebarItem {

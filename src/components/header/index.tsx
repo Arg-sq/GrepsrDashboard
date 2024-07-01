@@ -3,7 +3,7 @@ import { Avatar, Box, Flex, Image, Text } from '@chakra-ui/react';
 import { svgs } from '@grepsr/assets/svgs';
 import { NAVIGATION_ROUTES } from '@grepsr/routes/routes.constants';
 import { grepsr_colors } from '@grepsr/theme/Color';
-import GetSidebarState from '@grepsr/utils/GetSidebarState';
+import { GetSidebarState } from '@grepsr/utils/GetSidebarState';
 import { useLocation } from 'react-router-dom';
 
 const Title = {

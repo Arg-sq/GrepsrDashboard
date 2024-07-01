@@ -5,7 +5,7 @@ import { svgs } from '../../assets/svgs';
 import Item from './NavItem';
 import { useLocation, useNavigate } from 'react-router-dom';
 import React from 'react';
-import GetSidebarState from '@grepsr/utils/GetSidebarState';
+import { GetSidebarState } from '@grepsr/utils/GetSidebarState';
 
 const navItems = [
   {

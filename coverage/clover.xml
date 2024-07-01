@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1719814542270" clover="3.2.0">
+  <project timestamp="1719814542270" name="All files">
+    <metrics statements="57" coveredstatements="53" conditionals="28" coveredconditionals="20" methods="6" coveredmethods="3" elements="91" coveredelements="76" complexity="0" loc="57" ncloc="57" packages="6" files="17" classes="17"/>
+    <package name="assets.svgs">
+      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="backArrow.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/backArrow.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="bell.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/bell.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="credit-usage.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/credit-usage.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="credit.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/credit.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="dataSet.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/dataSet.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="download.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/download.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="filter.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/filter.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="hide.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/hide.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/index.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="info.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/info.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="workflow.svg" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/assets/svgs/workflow.svg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.sidebar">
+      <metrics statements="27" coveredstatements="25" conditionals="28" coveredconditionals="20" methods="5" coveredmethods="3"/>
+      <file name="NavItem.tsx" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/components/sidebar/NavItem.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="16" coveredconditionals="9" methods="2" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/components/sidebar/index.tsx">
+        <metrics statements="17" coveredstatements="16" conditionals="12" coveredconditionals="11" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="84" count="6" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="useSidebarContext.ts" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/hooks/useSidebarContext.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="routes">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="routes.constants.ts" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/routes/routes.constants.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="theme">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Color.ts" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/theme/Color.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="GetSidebarState.tsx" path="/home/asheshdon/Desktop/GrepsrDashboard/grepsrDahsboard/src/utils/GetSidebarState.tsx">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
