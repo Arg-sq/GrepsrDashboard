@@ -37,11 +37,11 @@ const Layout = () => {
     <Box w={'100dvw'}>
       <SidebarState.Provider value={{ showSidebar, setShowSidebar }}>
         <Sidebar sidebarWidth={sidebarWidth} />
-        <Box ml={showSidebar ? '240px' : '80px'}>
+        <Box ml={showSidebar ? '240px' : '80px'} transition={'0.3s ease-in-out'}>
           <ErrorBoundary>
             <Suspense fallback={<SuspenseComponent />}>
               <Header />
-              <Box as="main" pt={3} pb={4} px={6} transition={'0.4s ease-in-out'}>
+              <Box as="main" pt={3} pb={4} px={6}>
                 <Outlet />
               </Box>
             </Suspense>

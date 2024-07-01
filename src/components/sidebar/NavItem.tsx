@@ -25,10 +25,14 @@ const Item: React.FC<ISidebarItem> = ({ item, isSelected }) => {
       cursor={'pointer'}
       _hover={!isSelected ? { bg: grepsr_colors.primary_100 } : {}}
       onClick={() => navigate(`${item?.path}`)}>
-      <HStack spacing={2} columnGap={2} p={3}>
-        <Image src={item.icon} alt={item.name} h={showSidebar ? '20px' : '26px'} />
+      <HStack
+        spacing={2}
+        columnGap={2}
+        p={showSidebar ? 3 : 2}
+        justifyContent={showSidebar ? 'start' : 'center'}>
+        <Image src={item.icon} alt={item.name} h={'20px'} />
         {showSidebar && (
-          <Text fontSize={'medium'} fontWeight={'500'}>
+          <Text fontSize={'medium'} fontWeight={'500'} transition={'0.3s ease-in-out'}>
             {item.name}
           </Text>
         )}

@@ -40,14 +40,14 @@ const Sidebar = ({ sidebarWidth }: ISidebarProps) => {
       color={grepsr_colors.black}
       bg={grepsr_colors.white}
       position={'fixed'}
-      transition={'0.3s ease-in-out'}
+      transition={'0.2s ease-in-out'}
       width={sidebarWidth}>
       <Text
         textAlign={'left'}
         fontSize={'xl'}
         my={4}
         ml={showSidebar ? 10 : 2}
-        transition={'0.4s ease-in-out'}
+        transition={'0.2s ease-in-out'}
         cursor={'pointer'}
         onClick={() => navigate(NAVIGATION_ROUTES.BASE)}>
         Grepsr
@@ -58,6 +58,7 @@ const Sidebar = ({ sidebarWidth }: ISidebarProps) => {
         <Flex
           direction={'column'}
           height="full"
+          transition={'0.2s ease-in-out'}
           maxH={`calc(100% - 225px)`}
           overflowY={'scroll'}
           width={showSidebar ? '240px' : '78px'}
