@@ -9,7 +9,10 @@ const DataSetHeader = () => {
   const [isEditMode, setEditMode] = useState(false);
   return (
     <Flex
-      flexDirection={{ base: 'column', lg: 'row' }}
+      flexDirection={{
+        base: 'column',
+        lg: 'row'
+      }}
       gap={{ base: 2, lg: 0 }}
       mt={3}
       justifyContent={'space-between'}
@@ -21,7 +24,12 @@ const DataSetHeader = () => {
           Add Filters
         </Button>
       </Flex>
-      <Flex flexDirection={{ base: 'column', lg: 'row' }} gap={{ base: 2, lg: 0 }}>
+      <Flex
+        flexDirection={{
+          base: 'column',
+          lg: 'row'
+        }}
+        gap={{ base: 2, lg: 0 }}>
         <Flex alignItems={'center'} mr={6} gap={2}>
           <Text>Edit mode</Text>
           <ChakraSwitch isChecked={isEditMode} action={() => setEditMode((prev) => !prev)} />
