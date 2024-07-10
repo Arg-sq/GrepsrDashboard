@@ -17,10 +17,9 @@ const ChakraSwitch: FC<ISwitch> = ({ isChecked, action }) => {
         '.chakra-switch__track::after': {
           content: isChecked ? '"ON"' : '"OFF"',
           color: grepsr_colors.white,
-          display: 'block',
           position: 'absolute',
-          transform: 'translate(-50%,-50%)',
           top: '12px',
+          transform: 'translate(-50%,-50%)',
           left: isChecked ? '28%' : '66%',
           fontWeight: 'bold',
           fontSize: 'xs'
