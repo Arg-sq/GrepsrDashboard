@@ -48,3 +48,5 @@ describe('Sidebar component on closed view', () => {
     jest.clearAllMocks();
   });
 });
+
+//test this
